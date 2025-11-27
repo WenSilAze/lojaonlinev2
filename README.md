@@ -87,6 +87,8 @@ public class Conexao {
 
 ## ▶️ Como executar
 
+**Coloque o caminho do projeto antes dos códigos abaixo. Exemplo: C:\Users\wende\lojaonlineV2**
+
 1. **Compilar o projeto:**
    ```bash
    mvn clean compile
