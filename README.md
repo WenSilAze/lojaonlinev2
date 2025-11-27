@@ -1,12 +1,64 @@
 # 🚀 Como rodar o projeto Loja Online
 
 ## 📋 Pré-requisitos
-- **Java:** JDK 21 (verifique com `java -version`)
-- **Maven:** 3.8+ (verifique com `mvn -v`)
-- **Banco de Dados:** MySQL 8+
-- **IDE (opcional):** IntelliJ IDEA ou Eclipse
+- **Java:** JDK 21 (verifique com `java -version`) e adicione o caminho(PATH) e a variável de ambiente
+- **Maven:** 3.8+ (verifique com `mvn -v`) e adicione o caminho(PATH) e a variável de ambiente
+- **Banco de Dados:** MySQL 8+ e **XAMPP de preferência**
+- **IDE:** Visual Studio Code ou Eclipse
 
 ---
+
+# 📦 Extensões necessárias no VS Code para rodar o projeto Loja Online
+
+## ☕ Java
+- **Extension Pack for Java**  
+  (inclui várias ferramentas essenciais de uma vez)
+  - Language Support for Java™ by Red Hat
+  - Debugger for Java
+  - Java Test Runner
+  - Maven for Java
+  - Project Manager for Java
+
+## 🔧 Maven
+- **Maven for Java**  
+  Permite compilar, rodar e gerenciar dependências diretamente pelo VS Code.
+
+## 🎨 JavaFX
+- Não existe uma extensão específica para JavaFX.  
+  O suporte vem do **Java Extension Pack** + configuração correta do `pom.xml`.  
+  - Certifique-se de adicionar as dependências do JavaFX no `pom.xml`:
+    ```xml
+    <dependencies>
+      <dependency>
+        <groupId>org.openjfx</groupId>
+        <artifactId>javafx-controls</artifactId>
+        <version>21</version>
+      </dependency>
+      <dependency>
+        <groupId>org.openjfx</groupId>
+        <artifactId>javafx-fxml</artifactId>
+        <version>21</version>
+      </dependency>
+    </dependencies>
+    ```
+
+## 🗄️ Banco de Dados (opcional)
+- **SQLTools**  
+  Para conectar e testar queries diretamente no MySQL dentro do VS Code.
+- **SQLTools MySQL/MariaDB**  
+  Driver para o SQLTools funcionar com MySQL.
+
+---
+
+## ✅ Resumindo
+Instale no VS Code:
+1. **Extension Pack for Java** (já traz tudo de Java e Maven).  
+2. **SQLTools + SQLTools MySQL/MariaDB** (se quiser gerenciar o banco direto no VS Code).  
+
+Com isso, você consegue:
+- Compilar e rodar o projeto com Maven.  
+- Depurar código Java.  
+- Usar JavaFX sem precisar de extensão extra (apenas dependência no `pom.xml`).  
 
 ## 🗄️ Configuração do Banco de Dados
 
@@ -87,7 +139,7 @@ public class Conexao {
 
 ## ▶️ Como executar
 
-**Coloque o caminho do projeto antes dos códigos abaixo. Exemplo: C:\Users\wende\lojaonlineV2**
+**Coloque o caminho do projeto antes dos códigos abaixo. Exemplo: cd C:\Users\wende\lojaonlineV2**
 
 1. **Compilar o projeto:**
    ```bash
