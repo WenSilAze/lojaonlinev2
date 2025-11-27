@@ -4,7 +4,7 @@
 - **Java:** JDK 21 (verifique com `java -version`) e adicione o caminho(PATH) e a variável de ambiente
 - **Maven:** 3.8+ (verifique com `mvn -v`) e adicione o caminho(PATH) e a variável de ambiente
 - **Banco de Dados:** MySQL 8+
-- **IDE (opcional):** Visual Studio Code ou Eclipse
+- **IDE:** Visual Studio Code ou Eclipse
 
 ---
 
@@ -139,7 +139,7 @@ public class Conexao {
 
 ## ▶️ Como executar
 
-**Coloque o caminho do projeto antes dos códigos abaixo. Exemplo: C:\Users\wende\lojaonlineV2**
+**Coloque o caminho do projeto antes dos códigos abaixo. Exemplo: cd C:\Users\wende\lojaonlineV2**
 
 1. **Compilar o projeto:**
    ```bash
