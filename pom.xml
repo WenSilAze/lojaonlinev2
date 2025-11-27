@@ -47,7 +47,7 @@
         </configuration>
       </plugin>
 
-      <!-- Plugin para compilar com preview features (opcional) -->
+      <!-- Plugin para compilar com preview features -->
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-compiler-plugin</artifactId>

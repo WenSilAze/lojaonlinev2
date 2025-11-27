@@ -42,7 +42,7 @@ CREATE TABLE IF NOT EXISTS item_pedido (
 -- Inserir clientes
 INSERT INTO cliente (nome, email, senha, role) VALUES
 ('Admin', 'admin@loja.com', '123456', 'ADMIN'),
-('Wendel', 'wendel@loja.com', '123456', 'USER');
+('User', 'userl@loja.com', '123456', 'USER');
 
 -- Inserir produtos
 INSERT INTO produto (nome, preco, estoque) VALUES
