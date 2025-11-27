@@ -1,0 +1,17 @@
+com\wendel\loja\MainApp.class
+com\wendel\loja\service\ProdutoService.class
+com\wendel\loja\dao\ClienteDAO.class
+com\wendel\loja\dao\PedidoDAO.class
+com\wendel\loja\model\ItemPedido.class
+com\wendel\loja\model\Pedido.class
+com\wendel\loja\service\PedidoService.class
+com\wendel\loja\dao\ProdutoDAO.class
+com\wendel\loja\model\Cliente.class
+com\wendel\loja\model\Produto.class
+com\wendel\loja\util\Conexao.class
+com\wendel\loja\service\AuthService.class
+module-info.class
+com\wendel\loja\view\LoginView.class
+com\wendel\loja\dao\ItemPedidoDAO.class
+com\wendel\loja\view\AdminProdutoView.class
+com\wendel\loja\view\LojaView.class
