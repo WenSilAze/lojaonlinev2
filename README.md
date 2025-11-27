@@ -111,11 +111,11 @@ public class Conexao {
 
 - **Admin:**  
   Email: `admin@loja.com`  
-  Senha: `admin`
+  Senha: `123456`
 
 - **Usuário comum:**  
   Email: `user@loja.com`  
-  Senha: `user`
+  Senha: `123456`
 
 ---
 
