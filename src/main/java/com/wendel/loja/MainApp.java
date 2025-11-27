@@ -1,5 +1,6 @@
 package com.wendel.loja;
 
+// importações
 import com.wendel.loja.model.Cliente;
 import com.wendel.loja.view.LoginView;
 import com.wendel.loja.view.LojaView;
@@ -8,6 +9,7 @@ import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
+// Classe principal da aplicação
 public class MainApp extends Application {
 
     private Stage stage;

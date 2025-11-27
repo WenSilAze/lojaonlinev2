@@ -1,9 +1,11 @@
 package com.wendel.loja.model;
 
+// importações
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 
+// Classe que representa um pedido
 public class Pedido {
     private Integer id;
     private Integer clienteId;

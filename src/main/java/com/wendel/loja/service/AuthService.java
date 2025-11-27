@@ -1,10 +1,13 @@
 package com.wendel.loja.service;
 
+// importações
 import com.wendel.loja.dao.ClienteDAO;
 import com.wendel.loja.model.Cliente;
 
+// Classe para serviços de autenticação e registro de clientes
 public class AuthService {
 
+    // DAO de Cliente
     private final ClienteDAO clienteDAO = new ClienteDAO();
 
     // Login com email e senha

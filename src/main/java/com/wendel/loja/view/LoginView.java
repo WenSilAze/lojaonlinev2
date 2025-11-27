@@ -1,5 +1,6 @@
 package com.wendel.loja.view;
 
+// importações
 import com.wendel.loja.model.Cliente;
 import com.wendel.loja.service.AuthService;
 import javafx.geometry.Insets;
@@ -7,6 +8,7 @@ import javafx.scene.Parent;
 import javafx.scene.control.*;
 import javafx.scene.layout.VBox;
 
+// Classe para a interface de login
 public class LoginView {
 
     private final VBox root = new VBox(12);
@@ -87,6 +89,7 @@ public class LoginView {
             });
         });
 
+        // Layout
         root.getChildren().addAll(title, email, senha, btnLogin, btnRegister, feedback);
         root.setPadding(new Insets(16));
     }

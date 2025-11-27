@@ -1,5 +1,6 @@
 package com.wendel.loja.dao;
 
+// importações
 import com.wendel.loja.model.Cliente;
 import com.wendel.loja.util.Conexao;
 

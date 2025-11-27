@@ -1,5 +1,6 @@
 package com.wendel.loja.service;
 
+// importações
 import com.wendel.loja.dao.ItemPedidoDAO;
 import com.wendel.loja.dao.PedidoDAO;
 import com.wendel.loja.dao.ProdutoDAO;
@@ -11,12 +12,14 @@ import java.sql.Connection;
 import java.sql.SQLException;
 import java.util.List;
 
+// Classe para serviços relacionados a pedidos
 public class PedidoService {
 
     private final PedidoDAO pedidoDAO = new PedidoDAO();
     private final ItemPedidoDAO itemDAO = new ItemPedidoDAO();
     private final ProdutoDAO produtoDAO = new ProdutoDAO();
 
+    // Fechar pedido: cria pedido, insere itens e atualiza estoque
     public int fecharPedido(int clienteId, List<ItemPedido> itens) throws SQLException {
         try (Connection conn = Conexao.getConnection()) {
             try {

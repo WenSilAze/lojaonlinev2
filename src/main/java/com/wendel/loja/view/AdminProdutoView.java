@@ -1,5 +1,6 @@
 package com.wendel.loja.view;
 
+// importações
 import com.wendel.loja.model.Produto;
 import com.wendel.loja.service.ProdutoService;
 import javafx.collections.FXCollections;
@@ -14,8 +15,10 @@ import javafx.scene.layout.VBox;
 
 import java.math.BigDecimal;
 
+// Classe para a interface de administração de produtos
 public class AdminProdutoView {
 
+    // Root pane
     private final BorderPane root = new BorderPane();
     private final ProdutoService produtoService = new ProdutoService();
     private final ObservableList<Produto> produtos = FXCollections.observableArrayList();
@@ -50,6 +53,7 @@ public class AdminProdutoView {
             }
         });
 
+        // Botão para adicionar novo produto
         btnAdicionar.setOnAction(e -> {
             Dialog<ButtonType> dialog = new Dialog<>();
             dialog.setTitle("Novo Produto");
@@ -86,6 +90,7 @@ public class AdminProdutoView {
             });
         });
 
+        // Botão para editar produto existente
         btnEditar.setOnAction(e -> {
             Produto selecionado = tabelaProdutos.getSelectionModel().getSelectedItem();
             if (selecionado == null) {
@@ -127,6 +132,7 @@ public class AdminProdutoView {
             });
         });
 
+        // Botão para remover produto existente
         btnRemover.setOnAction(e -> {
             Produto selecionado = tabelaProdutos.getSelectionModel().getSelectedItem();
             if (selecionado == null) {
@@ -142,6 +148,7 @@ public class AdminProdutoView {
             }
         });
 
+        // Botão para voltar à tela anterior
         btnVoltar.setOnAction(e -> onBack.run());
 
         // Layout
@@ -154,9 +161,11 @@ public class AdminProdutoView {
         root.setTop(topo);
         root.setCenter(centro);
 
+        // Carregar produtos inicialmente
         btnAtualizar.fire();
     }
 
+    // Método para obter o root pane
     public Parent getRoot() {
         return root;
     }

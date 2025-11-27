@@ -1,5 +1,6 @@
 package com.wendel.loja.dao;
 
+// importações
 import com.wendel.loja.model.Produto;
 import com.wendel.loja.util.Conexao;
 
@@ -7,6 +8,7 @@ import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
+// Classe para operações de banco de dados relacionadas a produtos
 public class ProdutoDAO {
 
     // Listar todos os produtos

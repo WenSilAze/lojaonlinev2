@@ -1,5 +1,6 @@
 package com.wendel.loja.view;
 
+// importações
 import com.wendel.loja.model.Cliente;
 import com.wendel.loja.model.ItemPedido;
 import com.wendel.loja.model.Produto;
@@ -18,6 +19,7 @@ import javafx.stage.Stage;
 
 import java.math.BigDecimal;
 
+// Classe principal da view da loja
 public class LojaView {
 
     private final BorderPane root = new BorderPane();
@@ -60,10 +62,10 @@ public class LojaView {
         Button btnRemover = new Button("Remover do carrinho");
         Button btnFechar = new Button("Fechar pedido");
         Button btnAdmin = new Button("Admin Produtos");
-        Button btnVoltarLogin = new Button("Voltar para Login"); // <-- novo botão
+        Button btnVoltarLogin = new Button("Voltar para Login");
 
         Label status = new Label();
-        Label totalLabel = new Label("Total: R$ 0.00");
+        Label totalLabel = new Label("Total: R$ 0.00"); // Valor total do carrinho
 
         // Ações
         btnAtualizar.setOnAction(e -> {
@@ -75,6 +77,7 @@ public class LojaView {
             }
         });
 
+        // Ação de adicionar ao carrinho
         btnAdicionar.setOnAction(e -> {
             Produto p = tabelaProdutos.getSelectionModel().getSelectedItem();
             if (p == null) { status.setText("Selecione um produto."); return; }
@@ -94,6 +97,7 @@ public class LojaView {
             });
         });
 
+        // Ação de remover do carrinho
         btnRemover.setOnAction(e -> {
             ItemPedido item = tabelaCarrinho.getSelectionModel().getSelectedItem();
             if (item != null) {
@@ -116,6 +120,7 @@ public class LojaView {
             }
         });
 
+        // Ação para abrir a área de administração
         btnAdmin.setOnAction(e -> {
             if (!"ADMIN".equalsIgnoreCase(cliente.getRole())) {
                 Alert alert = new Alert(Alert.AlertType.WARNING,
@@ -148,7 +153,8 @@ public class LojaView {
 
         btnAtualizar.fire();
     }
-
+    
+    // Atualiza o valor total do carrinho
     private void atualizarTotal(Label totalLabel) {
         BigDecimal total = carrinho.stream()
             .map(ItemPedido::getSubtotal)
@@ -157,6 +163,7 @@ public class LojaView {
         totalLabel.setText("Total: R$ " + total);
     }
 
+    // Retorna o nó raiz da interface
     public Parent getRoot() {
         return root;
     }

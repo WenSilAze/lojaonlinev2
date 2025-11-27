@@ -1,5 +1,6 @@
 package com.wendel.loja.model;
 
+// Classe que representa um cliente
 public class Cliente {
     private Integer id;
     private String nome;

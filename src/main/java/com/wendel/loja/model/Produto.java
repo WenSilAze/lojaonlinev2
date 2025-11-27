@@ -1,7 +1,9 @@
 package com.wendel.loja.model;
 
+// importações
 import java.math.BigDecimal;
 
+// Classe que representa um produto
 public class Produto {
     private Integer id;
     private String nome;

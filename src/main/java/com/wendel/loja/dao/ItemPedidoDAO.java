@@ -1,11 +1,13 @@
 package com.wendel.loja.dao;
 
+// importações
 import com.wendel.loja.model.ItemPedido;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
+// Classe para operações de banco de dados relacionadas a itens de pedido
 public class ItemPedidoDAO {
 
     public void inserir(Connection conn, ItemPedido item, int pedidoId) throws SQLException {
