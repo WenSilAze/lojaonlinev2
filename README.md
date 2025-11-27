@@ -1,8 +1,8 @@
 # 🚀 Como rodar o projeto Loja Online
 
 ## 📋 Pré-requisitos
-- **Java:** JDK 21 (verifique com `java -version`) e adicione o caminho(PATH) e a variável de ambiente
-- **Maven:** 3.8+ (verifique com `mvn -v`) e adicione o caminho(PATH) e a variável de ambiente
+- **Java:** JDK 21 (verifique com `java -version`) e adicione o caminho (PATH) e a variável de ambiente
+- **Maven:** 3.8+ (verifique com `mvn -v`) e adicione o caminho (PATH) e a variável de ambiente
 - **Banco de Dados:** MySQL 8+ e **XAMPP de preferência**
 - **IDE:** Visual Studio Code ou Eclipse
 
