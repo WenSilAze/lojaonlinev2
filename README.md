@@ -107,8 +107,8 @@ Com isso, você consegue:
 3. **Inserir dados de teste (opcional):**
    ```sql
    INSERT INTO cliente (nome, email, senha, role)
-   VALUES ('Admin', 'admin@loja.com', 'admin', 'ADMIN'),
-          ('Usuário', 'user@loja.com', 'user', 'USER');
+   VALUES ('Admin', 'admin@loja.com', '123456', 'ADMIN'),
+          ('Usuário', 'user@loja.com', '123456', 'USER');
 
    INSERT INTO produto (nome, preco, estoque)
    VALUES ('Playstation 5', 3200.00, 10),
