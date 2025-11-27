@@ -138,5 +138,3 @@ public class Conexao {
   <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   ```
 ```
-
----
